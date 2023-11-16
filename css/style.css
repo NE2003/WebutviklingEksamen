@@ -1,0 +1,151 @@
+.logo {
+
+  }
+
+.logo img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+.nav-items{
+    display: flex;
+    list-style: none;
+    padding-right: 2.5rem;
+    flex-direction: column;
+  }
+
+.nav-items li {
+    margin: 8px 0;
+    text-align: center;
+}
+
+.nav-items a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.current-menu-item a {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #e6bd43;
+    font-weight: bold;
+}   
+
+.contact a:hover{
+    background-color:#252525;
+    color: #e6bd43;
+}  
+
+.contact a{
+    background-color: #e6bd43;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    z-index: 3;
+}
+
+.image-text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-text article {
+    max-width: 600px;
+  }
+
+ 
+
+#page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.background-video{
+    display: none;
+}
+
+.bg-img{
+    background-image: url('../ressurser/background-img.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+    text-indent: -9999px; /* Fjerner alt tekst */
+}
+.overlay {
+    position:absolute   ;
+    top: 21.6rem;
+    left: 0;
+    width: 100%;
+    height: 25rem;
+    background-color: rgba(224, 217, 217, 0.5);
+  }
+
+
+  @media (min-width: 1000px) {
+
+    #grid-container {
+        grid-template-areas:
+          "header header header"
+          "main main main"
+          "aside aside aside"
+          "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .background-video{
+        display: block;
+        width: 100%;
+        height: 35rem; /* Må være lik som overlay height */
+        z-index: -1; 
+        overflow: hidden;
+    }
+    
+    
+    .overlay {
+        position:absolute;
+        top: 9.9rem;
+        left: 0;
+        width: 100%;
+        height: 35rem;
+        background-color: rgba(224, 217, 217, 0.5);
+      }
+
+      #page-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        flex-direction: unset;
+    }
+
+    .nav-items{
+        display: flex;
+        list-style: none;
+        padding-right: 1rem;
+        flex-direction: unset;
+      }
+    
+    .nav-items li {
+        margin: 0px 8px;
+    }
+
+    .logo {
+        padding-left: 1rem;
+      }
+
+    .bg-img{
+        display: none;
+    }
+    
+
+}
