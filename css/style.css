@@ -66,7 +66,7 @@ footer{
 
 .contact a{
     background-color: #e6bd43;
-    padding: 14px 16px;
+    padding: 15.9px 16px;
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -167,10 +167,10 @@ footer{
 
 .read-more h4{
     display: inline-block;
-    border: 2px solid #333;
+    border: 3px solid #000000;
     padding: 10px;
-    padding-right: 3rem;
-    margin-right: 10rem;
+    padding-right: 5rem;
+    margin-right: 7rem;
     margin-left: 5rem;
     text-align: start;
     color: black;
@@ -183,6 +183,66 @@ footer{
     text-align: start;
 }
 
+.footer{
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+}
+
+.services h3{
+    font-size: 25px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.services h4{
+    font-size: 20px;
+}
+
+.fa-solid {
+    font-size: 40px;
+  }
+
+  .newsletter{
+    background-color: rgb(236, 236, 236);
+    height: 12rem;
+  }
+
+  .newsletter h3{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 4rem;
+  }
+
+  .signupForm{
+    display: flex;
+    flex-direction: row;
+    height: 3.1rem;
+    justify-content: center;
+  }
+
+  .signupForm input{
+    text-indent: 8px;
+    border: none;
+    outline: none;
+  }
+  
   @media (min-width: 1000px) {
 
     #grid-container {
