@@ -115,6 +115,7 @@ footer{
     z-index: 3;
     margin-left: 4rem;
     margin-right: 4rem;
+    margin-top: -1rem;
     text-align: start;
 }
 
@@ -442,6 +443,13 @@ footer{
     align-items: center;
     text-align: center;
 }
+.services-title{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
 
 .services p {
     margin-left: 3rem;
@@ -450,11 +458,6 @@ footer{
     margin-top: -1rem;
 }
 
-.services h3{
-    font-size: 25px;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
 
 .services h4{
     font-size: 20px;
@@ -553,8 +556,8 @@ footer{
     }
     .parahraph{
         margin-bottom: 3rem;
-        margin-left: 40rem;
-        margin-right: 40rem;
+        margin-left: 30rem;
+        margin-right: 30rem;
     }
 
     .intro-section{
@@ -577,7 +580,7 @@ footer{
     
     .contact2 a{
         background-color: #e6bd43;
-        padding: 24px 16px;
+        padding: 19px 16px;
         color: black;
         font-weight: bold;
         text-decoration: none;
@@ -590,8 +593,52 @@ footer{
         z-index: 3;
         margin-left: 0rem;
         margin-right: 0rem;
+        margin-top: 0rem;
         text-align: center;
     }
+
+    .about-us{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 1rem;
+      }
     
+    .about-us-image img{
+        padding-left: 2rem;
+        max-width: 400px;
+        height: 400px;
+      }
+
+      .read-more h4{
+        padding-right: 1rem;
+    }
+
+    .services{
+        flex-direction: row;
+    }
+
+    .services-title{
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    
+    .newsletter h3{
+        font-size: 40px;
+        padding-top: 5rem;
+      }
+
+      .newsletter{
+        height: 18rem;
+      }
+
+      .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 
 }
