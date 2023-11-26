@@ -187,6 +187,27 @@ footer{
     text-indent: -9999px;
 }
 
+.bg-img-products{
+    background-image: url('../ressurser/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 34rem;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.overlay-products {
+    position:absolute;
+    top: 21rem;
+    left: 0;
+    width: 100%;
+    height: 34rem;
+    background-color: rgba(224, 217, 217, 0.5);
+  }
+
+
+
 .bg-img-about-us{
     background-image: url('../ressurser/bg1.jpg');
     background-size: cover;
@@ -417,17 +438,12 @@ footer{
 }
 
 .product-card{
-    
     overflow: visible;
 }
 
-.product-card:hover .portfolio-img img {
-    transform: scale(1.1);
-}
 .portfolio-img img{
     max-width: 100%;
     height: 300px;
-    transition: transform 0.5s ease;
 
 }
 
@@ -639,6 +655,64 @@ footer{
         justify-content: space-between;
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+
+    .bg-img-products{
+        background-image: url('../ressurser/bg1.jpg');
+        margin-top: 3rem;
+    }
+    
+    .overlay-products {
+        top: 10.2rem;
+      }
+
+      .explore-title{
+        font-size: 30px;
+    }
+
+    .filter{
+        padding-top: 2rem;
+    }
+
+    .product-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: start;
+        flex-wrap: wrap;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 1600px;
+            
+    }
+    
+    .product-card{
+        flex: 1 0 calc(30.3333% - 20px);
+        margin-bottom: 20px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        transition: transform 0.5s ease;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-width: 692px;
+    }
+
+    .product-card:hover  {
+        transform: scale(1.04);
+        /*transform-origin: left center;*/
+        
+    }
+
+    
+    .portfolio-img img{
+        width: 100%;
+        height: 100%;
+        max-width: 692px;
+    }
+
+    .portfolio-img{
+        overflow: visible;
     }
 
 }
