@@ -58,6 +58,7 @@ footer{
     font-size: 30px;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 .footer-copyright{
@@ -829,7 +830,7 @@ iframe{
 
 
     .filter-box:hover h4{
-        background-color: black;
+        background-color: #252525;
         color: #e6bd43;
     }
 
@@ -880,7 +881,7 @@ iframe{
     }
 
     .read-more:hover h4{
-        background-color: black;
+        background-color: #252525;
         color: #e6bd43;
     }
 
