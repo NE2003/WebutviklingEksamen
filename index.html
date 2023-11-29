@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nb" itemscope itemtype="http://schema.org/WebPage">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +21,9 @@
         <div id="grid-container">
             <header id="page-header">
                 <!-- Unngår å bruke aria label i denne logoen da det er forstyrrende og unødvendig -->
-                <h2><a href="index.html" class="logo"><img src="ressurser\logo1.png" alt="Website logo - also refreshes the home page" itemprop="logo" aria-label="Go to the home page"/></a></h2>
+                <h2><a href="index.html" class="logo"><img src="ressurser/logo1.png" alt="Website logo - also refreshes the home page" itemprop="logo" aria-label="Go to the home page"/></a></h2>
                 <nav role="navigation" itemprop="navigation">
-                    <ul class="nav-items">
+                    <ul class="nav-items" role="menubar">
                         <li class="current-menu-item"><a href="index.html" role="menuitem" aria-label="Go to the home page">Home</a></li>
                         <li><a href="products.html" role="menuitem" aria-label="Go to the portfolio page">Portfolio</a></li>
                         <li><a href="about.html" role="menuitem" aria-label="Go to the about us page">About</a></li>
@@ -31,11 +31,11 @@
                     </ul>
                 </nav>
                 <!-- Kort beskrivelse av bilde, får frem at det ikke er nødvendig for bruken av nettsiden -->
-                <a class="bg-img" role="img"><img alt="Scenic view of the mountains" itemprop="image"/></a></h2>
+                <a class="bg-img" role="img"></a>
                 <section class="background-video">
                     <!-- forbedrer navigasjon ved å fjerne videon fra tastatur-navigasjon -->
                     <video autoplay loop muted tabindex="-1">
-                        <source src="ressurser\mountains.mp4" type="video/mp4">
+                        <source src="ressurser/mountains.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </section>
@@ -55,7 +55,7 @@
                     <p>You are full of surprises, Master Baggins. Painted sacred eats camp charm Shirkers system. Greed club run caves sprite youngest toad Lower inquiries. Shreds quest business Sebastian cracked ignored wizard?</p>
                 </article>
                 <section class="about-us">
-                    <h2><a class="about-us-image"><img src="ressurser\placeholder 400400.png" alt="Et beskrivende bilde av vår bedrift" /></a></h2>
+                    <h2><a class="about-us-image"><img src="ressurser/placeholder 400400.png" alt="Et beskrivende bilde av vår bedrift" /></a></h2>
                     <article role="article" itemscope itemtype="http://schema.org/Article">
                         <h3>About our company</h3>
                         <p class="about-us-para">Oath torn desolation Maggot's walked tobacco plumbing five judged. Let the Ring-bearer decide. Modeling well-wishers within attacked batses flatten Bolg loveliest prisoner. Reasoned noise Frodo Baggins mug halfling's barley gaze entered! Andros report sapphire tired? Parent face eats win Fellowship. Hear my voice. Come back to the light. Dogs eaves Mungo's rogue forked fabled blue. Gandalf's death was not in vain. Nor would he have you give up hope. Joy moaning cannot wit resolved became crop Ring-bearer. Downhill relevant Pelennor sautéed fabled fire noise lament mountain interesting. All right, then. Keep your secrets. Percy farther fixed don't!</p>
@@ -103,7 +103,7 @@
             <footer itemscope itemtype="http://schema.org/WPFooter">
                 <section class="footer">
                     <!-- Legger til Aria label da dette er det som leses først av en skjermleser (jeg testet med NVDA) -->
-                    <h2><a href="index.html" class="logo2" role="link" aria-label="Back to the top of the page"><img src="ressurser\logo1.png" alt="Nettsidens logo" title="Website logo - also navigates to home page" itemprop="logo"/></a></h2>
+                    <h2><a href="index.html" class="logo2" role="link" aria-label="Back to the top of the page"><img src="ressurser/logo1.png" alt="Nettsidens logo" title="Website logo - also navigates to home page" itemprop="logo"/></a></h2>
                     <p class="footer-copyright" itemprop="copyrightHolder">Companyright Companyname 2023</p>
                     <section class="SOME">
                         <a href="https://facebook.com" title="Our facebook"><i  class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
