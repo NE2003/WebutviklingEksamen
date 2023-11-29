@@ -1,3 +1,4 @@
+/*Felles*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
@@ -19,12 +20,15 @@
 header{
     grid-area: header;
 }
+
 aside{
     grid-area: aside;
 }
+
 main{
     grid-area: main;
 }
+
 footer{
     grid-area: footer;
 }
@@ -34,12 +38,13 @@ footer{
     width: 7rem;
     margin-bottom: -40px;
   }
+  
 .logo2 img {
     height: 7rem;
     width: 7rem;
 
   }
-
+  
 .footer{
     background-color: #252525;
     display: flex;
@@ -48,7 +53,6 @@ footer{
     align-items: center;
     height: 17rem;
 }
-
 .SOME{
     display: flex;
     flex-direction: row;
@@ -89,9 +93,7 @@ footer{
     text-decoration-thickness: 2px;
     text-decoration-color: #e6bd43;
     font-weight: bold;
-}   
-
- 
+} 
 
 .contact a{
     background-color: #e6bd43;
@@ -101,6 +103,54 @@ footer{
     color: black;
     z-index: 3;
 }
+
+#page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
+    flex-direction: column;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services-title{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+.services p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+}
+
+.services h4{
+    font-size: 20px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*Index*/
 
 .contact2{
     background-color: #e6bd43;
@@ -157,15 +207,6 @@ footer{
     margin-right: 4rem;
 }
 
- 
-#page-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap ;
-    flex-direction: column;
-}
-
 .background-video{
     display: none;
 }
@@ -179,6 +220,65 @@ footer{
     overflow: hidden;
     text-indent: -9999px;
 }
+
+.overlay {
+    position:absolute;
+    top: 21rem;
+    left: 0;
+    width: 100%;
+    height: 34rem;
+    background-color: rgba(224, 217, 217, 0.5);
+  }
+
+.about-us{
+    background-color: #e6bd43;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:start;
+    padding-bottom: 5rem;
+  }
+
+.about-us-image img{
+    padding-top: 1rem;
+    max-width: 100%;
+    height: 300px;
+  }
+
+.about-us h3{
+    padding-left: 5rem;
+    margin-right: 12rem;
+    padding-top: 2rem;
+    text-align: start;
+
+}
+
+.read-more h4{
+    display: inline-block;
+    border: 3px solid #000000;
+    padding: 20px 15px;
+    padding-right: 5rem;
+    margin-right: 6rem;
+    margin-left: 5rem;
+    text-align: start;
+    color: black;
+}
+
+.about-us-para{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: start;
+}
+
+#our-services{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+/*Products*/
 
 .bg-img-products{
     background-image: url('../ressurser/bg1.jpg');
@@ -201,13 +301,99 @@ footer{
     background-color: rgba(224, 217, 217, 0.5);
   }
 
-  .overlay-title{
+.overlay-title{
     margin-top: 15rem;
     text-align: center;
     font-size: 40px;
 }
 
+.filter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    margin-left: 2.5rem;
+}
 
+.filter-box h4{
+    display: inline-block;
+    border: 2px solid #9e9e9e;
+    padding: 12px 8px;
+    text-align: start;
+    margin-right: 1rem;
+    color: rgb(133, 132, 132);
+    margin-top: -0.5rem;
+}
+
+
+.breakpoint{
+    border: 2px solid #e6bd43;
+    margin-bottom: 2rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+.explore-title{
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+#branding{
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+#development{
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    padding-top: 3rem;
+}
+
+#design{
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    padding-top: 3rem;
+}
+
+.product-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+
+}
+
+.product-section h3 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.product-card{
+    margin-bottom: 6rem;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    max-width: 692px;
+    aspect-ratio: 1;
+    margin-left: 3.9rem;
+    margin-right: 3.9rem;
+
+}
+   
+.portfolio-img img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.product-title{
+    margin-bottom: 3rem;
+    margin-right: 9rem;
+}
+
+/*About*/
 
 .bg-img-about-us{
     background-image: url('../ressurser/bg1.jpg');
@@ -219,14 +405,6 @@ footer{
     text-indent: -9999px;
 }
 
-.overlay {
-    position:absolute;
-    top: 21rem;
-    left: 0;
-    width: 100%;
-    height: 34rem;
-    background-color: rgba(224, 217, 217, 0.5);
-  }
 
   .overlay-about-us {
     position:absolute;
@@ -352,170 +530,6 @@ footer{
     padding-right: 1rem;
 }
 
-.about-us{
-    background-color: #e6bd43;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:start;
-    padding-bottom: 5rem;
-  }
-
-.about-us-image img{
-    padding-top: 1rem;
-    max-width: 100%;
-    height: 300px;
-  }
-
-.about-us h3{
-    padding-left: 5rem;
-    margin-right: 12rem;
-    padding-top: 2rem;
-    text-align: start;
-
-}
-
-.read-more h4{
-    display: inline-block;
-    border: 3px solid #000000;
-    padding: 20px 15px;
-    padding-right: 5rem;
-    margin-right: 6rem;
-    margin-left: 5rem;
-    text-align: start;
-    color: black;
-}
-
-.filter{
-    display: flex;
-    flex-wrap: wrap;
-    align-items:flex-start;
-    margin-left: 2.5rem;
-}
-
-.filter-box h4{
-    display: inline-block;
-    border: 2px solid #9e9e9e;
-    padding: 12px 8px;
-    text-align: start;
-    margin-right: 1rem;
-    color: rgb(133, 132, 132);
-    margin-top: -0.5rem;
-}
-
-
-
-.breakpoint{
-    border: 2px solid #e6bd43;
-    margin-bottom: 2rem;
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
-}
-
-.explore-title{
-    margin-left: 2.5rem;
-    margin-bottom: 1rem;
-    font-size: 20px;
-}
-
-#branding{
-    margin-left: 2.5rem;
-    margin-bottom: 1rem;
-    font-size: 20px;
-}
-
-#development{
-    margin-left: 2.5rem;
-    margin-bottom: 1rem;
-    font-size: 20px;
-    padding-top: 3rem;
-}
-
-#design{
-    margin-left: 2.5rem;
-    margin-bottom: 1rem;
-    font-size: 20px;
-    padding-top: 3rem;
-}
-
-
-.about-us-para{
-    padding-left: 5rem;
-    padding-right: 5rem;
-    text-align: start;
-}
-
-.product-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: start;
-
-}
-
-.product-section h3 {
-    margin-left: 0rem;
-    margin-right: 0rem;
-}
-
-.product-card{
-    margin-bottom: 6rem;
-    transition: transform 0.5s ease;
-    object-fit: cover;
-    max-width: 692px;
-    aspect-ratio: 1;
-    margin-left: 3.9rem;
-    margin-right: 3.9rem;
-
-}
-   
-
-.portfolio-img img{
-    width: 100%;
-    height: 100%;
-
-}
-
-.product-title{
-    margin-bottom: 3rem;
-    margin-right: 9rem;
-}
-
-
-.services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.services-title{
-    text-align: center;
-    font-size: 25px;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-}
-
-#our-services{
-    text-align: center;
-    font-size: 25px;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-}
-
-.services p {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 3rem;
-    margin-top: -1rem;
-}
-
-
-.services h4{
-    font-size: 20px;
-}
-
 .fa-solid {
     font-size: 40px;
   }
@@ -544,18 +558,6 @@ footer{
     outline: none;
   }
 
-  .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
 .form-label{
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -565,7 +567,6 @@ footer{
 iframe{
     width: 100%;
 }
-
 
 
   @media (min-width: 1200px) {
@@ -580,30 +581,9 @@ iframe{
         grid-template-rows: auto;
     }
 
-    .background-video{
-        margin-top: 3rem;
-        display: block;
-        width: 100%;
-        height: 35rem;
-        z-index: -1; 
-        overflow: hidden;
-    }
+    /*Felles*/
 
-    .image-text{
-        margin-top: 7rem;
-    }
-    
-    
-    .overlay {
-        position:absolute;
-        top: 10.2rem;
-        left: 0;
-        width: 100%;
-        height: 35rem;
-        background-color: rgba(235, 235, 247, 0.5);
-      }
-
-      #page-header{
+    #page-header{
         display: flex;
         justify-content: space-between;
         align-items: center;    
@@ -631,7 +611,55 @@ iframe{
     .bg-img{
         display: none;
     }
-    .parahraph{
+
+    .services{
+        flex-direction: row;
+    }
+
+    .services-title{
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .contact a:hover{
+        background-color:#252525;
+        color: #e6bd43;
+    } 
+
+    /*Index*/
+
+    .background-video{
+        margin-top: 3rem;
+        display: block;
+        width: 100%;
+        height: 35rem;
+        z-index: -1; 
+        overflow: hidden;
+    }
+
+    .image-text{
+        margin-top: 7rem;
+    }
+    
+    .overlay {
+        position:absolute;
+        top: 10.2rem;
+        left: 0;
+        width: 100%;
+        height: 35rem;
+        background-color: rgba(235, 235, 247, 0.5);
+      }
+    
+      .parahraph{
         margin-bottom: 3rem;
         margin-left: 30rem;
         margin-right: 30rem;
@@ -687,19 +715,8 @@ iframe{
         height: 400px;
       }
 
-      .read-more h4{
+    .read-more h4{
         padding-right: 1rem;
-    }
-
-    .services{
-        flex-direction: row;
-    }
-
-    .services-title{
-        text-align: center;
-        font-size: 40px;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
     }
 
     #our-services{
@@ -715,16 +732,21 @@ iframe{
         padding-top: 5rem;
       }
 
-      .newsletter{
+    .newsletter{
         height: 18rem;
       }
 
-      .footer{
-        flex-direction: row;
-        justify-content: space-between;
-        padding-right: 1rem;
-        padding-left: 1rem;
+    .contact2 a:hover{
+        background-color:#252525;
+        color: #e6bd43;
     }
+    
+    .read-more:hover h4{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    /*Products*/
 
     .bg-img-products{
         background-image: url('../ressurser/bg1.jpg');
@@ -770,8 +792,7 @@ iframe{
         /*transform-origin: left center;*/
         
     }
-
-    
+  
     .portfolio-img img{
         width: 100%;
         height: 100%;
@@ -782,13 +803,20 @@ iframe{
         overflow: visible;
     }
 
+    .filter-box:hover h4{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    /*About*/
+
     .bg-img-about-us{
         margin-top: 3rem;
         height: 34rem;
 
-    }
+      }
     
-      .overlay-about-us {
+    .overlay-about-us {
         width: 40%;
         top: 11.5rem;
         left: 55%;
@@ -796,18 +824,18 @@ iframe{
         background-color: rgba(240, 240, 240, 0.76);
       }
 
-      .about-our-company{
+    .about-our-company{
         margin-top: 2rem;
       }
 
-      .about-our-company h3{
+    .about-our-company h3{
         margin-bottom: -0.5rem;
       }
 
-      .contact-about-us:hover{
+    .contact-about-us:hover{
         background-color:#252525;
         color: #e6bd43;
-    }  
+      }  
     
     .contact-about-us{
         background-color: #e6bd43;
@@ -816,26 +844,7 @@ iframe{
         z-index: 3;
         text-align: start;
     }
-
-    .contact a:hover{
-        background-color:#252525;
-        color: #e6bd43;
-    } 
-
-    .contact2 a:hover{
-        background-color:#252525;
-        color: #e6bd43;
-    }  
-    
-
-
-    .filter-box:hover h4{
-        background-color: #252525;
-        color: #e6bd43;
-    }
-
-
-    
+   
     .client-title{
         font-size: 40px;
     }
@@ -879,12 +888,5 @@ iframe{
     .contact-section p{
         margin-right: 20%;
     }
-
-    .read-more:hover h4{
-        background-color: #252525;
-        color: #e6bd43;
-    }
-
-
 
 }
