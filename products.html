@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="nb" itemscope itemtype="http://schema.org/WebPage">
     <head>
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+
+        <title>CreativeForge</title>
+        <meta name="description" content="Beskrivelse av nettsiden">
+        <meta name="keywords" content="Services, Branding, Design, Development, Creativity, Productivity, Quality">
+
+        <meta property="og:title" content="Tittel for Facebook">
+        <meta property="og:description" content="Beskrivelse for Facebook">
+        <meta property="og:image" content="URL-til-bilde-for-facebook.jpg">
+        <meta property="og:url" content="URL-til-nettsiden">
+
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,21 +22,20 @@
     <body>
         <div id="grid-container">
             <header id="page-header">
-                <h2><a href="index.html" class="logo"><img src="ressurser\logo1.png" alt="Nettsidens logo" /></a></h2>
-                    <nav>
+                <h2><a href="index.html" class="logo"><img src="ressurser\logo1.png" alt="Website logo - also navigates to home page" itemprop="logo" aria-label="Go to the home page"/></a></h2>
+                    <nav role="navigation" itemprop="navigation">
                         <ul class="nav-items">
-                            <li><a href="index.html" title="navigate to home page">Home</a></li>
-                            <li class="current-menu-item"><a href="products.html" title="navigate to portfolio">Portfolio</a></li>
-                            <li><a href="about.html" title="navigate to about-us page">About</a></li>
-                            <li class="contact"><a href="about.html#contact-title" title="navigate to contact information">Contact</a></li>
+                            <li><a href="index.html" role="menuitem" aria-label="Go to the home page">Home</a></li>
+                            <li class="current-menu-item"><a href="products.html" role="menuitem" aria-label="Go to the portfolio page">Portfolio</a></li>
+                            <li><a href="about.html" role="menuitem" aria-label="Go to the about us page">About</a></li>
+                            <li class="contact"><a href="about.html#contact-title" role="menuitem" aria-label="Go to our contact section">Contact</a></li>
                         </ul>
                     </nav>
+                    <!-- Kort beskrivelse av bilde, får frem at det ikke er nødvendig for bruken av nettsiden -->
                     <a class="bg-img-products"><img alt="Scenic view of the mountains"/></a></h2>
                     <div class="overlay-products">
-                        <section class="">
-                            <article>
-                                <h2 class="overlay-title">Portfolio</h2>
-                            </article>
+                        <section>
+                            <h2 class="overlay-title">Portfolio</h2>
                         </section>
                     </div>
             </header>
@@ -34,13 +43,13 @@
                 <h3 class="explore-title">Explore previous jobs</h3>
                 <div class="breakpoint"></div>
                 <section class="filter">
-                    <a href="#branding" class="filter-box" title="navigate to branding section">
+                    <a href="#branding" class="filter-box" title="navigate to branding section" role="link" aria-label="Go to the branding section">
                         <h4>Branding</h4>
                     </a> 
-                    <a href="#design" class="filter-box" title="navigate to design section">
+                    <a href="#design" class="filter-box" title="navigate to design section" role="link" aria-label="Go to the design section">
                         <h4>Design</h4>
                     </a> 
-                    <a href="#development" class="filter-box" title="navigate to development section">
+                    <a href="#development" class="filter-box" title="navigate to development section" role="link" aria-label="Go to the development section">
                         <h4>Development</h4>
                     </a> 
                 </section>
@@ -48,63 +57,65 @@
             <main class="main-content">
                 <h3 id="branding">Branding</h3>
                 <div class="breakpoint"></div>
-                <section class="product-section">
-                    <article class="product-card">
-                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within branding" /></a>
+                <section class="product-section"  itemprop="mainContentOfPage">
+                    <article class="product-card" role="article" itemscope itemtype="http://schema.org/Article">
+                        <!-- tekstlig beskrivelse av prosjektet og hvem det var for da dette er hovedinnholdet på siden og viktige for brukeren -->
+                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within branding. This project was done for HIOF" itemprop="image"/></a>
                         <h3 class="product-title">Et harum quidem</h3>
                     </article>
-                    <article class="product-card">
-                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within branding" /></a>
+                    <article class="product-card" role="article" itemscope itemtype="http://schema.org/Article">
+                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within branding. This project was done for WHO" itemprop="image"/></a>
                         <h3 class="product-title">Et harum quidem</h3>
                     </article>
-                    <article class="product-card">
-                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within branding" /></a>
+                    <article class="product-card" role="article" itemscope itemtype="http://schema.org/Article">
+                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within branding. This project was done for Norges bank" itemprop="image"/></a>
                         <h3 class="product-title">Et harum quidem</h3>
                     </article>
-                    <article class="product-card">
-                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within branding" /></a>
+                    <article class="product-card" role="article" itemscope itemtype="http://schema.org/Article">
+                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within branding. This project was done for SB1" itemprop="image"/></a>
                         <h3 class="product-title">Et harum quidem</h3>
                     </article>
                 </section>
                 <h3 id="design">Design</h3>
                 <div class="breakpoint"></div>
-                <section class="product-section">
-                    <article class="product-card">
-                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within design" /></a>
+                <section class="product-section" itemprop="mainContentOfPage">
+                    <article class="product-card" role="article" itemscope itemtype="http://schema.org/Article">
+                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within design. This project was done for HIOF" itemprop="image"/></a>
                         <h3 class="product-title">Et harum quidem</h3>
                     </article>
-                    <article class="product-card">
-                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within design" /></a>
+                    <article class="product-card" role="article" itemscope itemtype="http://schema.org/Article">
+                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within design. This project was done for WHO" itemprop="image"/></a>
                         <h3 class="product-title">Et harum quidem</h3>
                     </article>
-                    <article class="product-card">
-                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within design" /></a>
+                    <article class="product-card" role="article" itemscope itemtype="http://schema.org/Article">
+                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image displaying our companies work within design. This project was done for SB1" itemprop="image"/></a>
                         <h3 class="product-title">Et harum quidem</h3>
                     </article>
                 </section>
                 <h3 id="development">Development</h3>
                 <div class="breakpoint"></div>
-                <section class="product-section">
-                    <article class="product-card">
-                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image showing our companies lates development" /></a>
+                <section class="product-section"  itemprop="mainContentOfPage">
+                    <article class="product-card" role="article" itemscope itemtype="http://schema.org/Article">
+                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image showing our companies lates development. This project was done for HIOF" itemprop="image"/></a>
                         <h3 class="product-title">Et harum quidem</h3>
                     </article>
-                    <article class="product-card">
-                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image showing our companies lates development" /></a>
+                    <article class="product-card" role="article" itemscope itemtype="http://schema.org/Article">
+                        <a class="portfolio-img"><img src="ressurser\placeholder 400400.png" alt="A image showing our companies lates development. This project was done for WHO" itemprop="image"/></a>
                         <h3 class="product-title">Et harum quidem</h3>
                     </article>
                 </section>
                 <!-- Lenker til selve dokumentet istedet for # så tastatur navigasjon starter øverst på siden i stedet for fortsette å navigere nederst på siden-->
-                <a href="products.html" class="back-to-top"><i class="fa-solid fa-arrow-up" style="color: #ffffff;" title="Navigate back-to-top"></i></a>
+                <a href="products.html" class="back-to-top" role="link" aria-label="Back to the top of the page"><i class="fa-solid fa-arrow-up" style="color: #ffffff;" title="Navigate back-to-top"></i></a>
             </main>
-            <footer>
+            <footer itemscope itemtype="http://schema.org/WPFooter">
                 <section class="footer">
-                    <h2><a href="index.html" class="logo2"><img src="ressurser\logo1.png" alt="Websites logo" title="Website logo - also navigates to home page"></a></h2>
-                    <p class="footer-copyright">Companyright Companyname 2023</p>
+                    <!-- Legger til Aria label da dette er det som leses først av en skjermleser (jeg testet med NVDA) -->
+                    <h2><a href="index.html" class="logo2" role="link" aria-label="Back to the home page"><img src="ressurser\logo1.png" alt="Websites logo" title="Website logo - also navigates to home page" itemprop="logo"></a></h2>
+                    <p class="footer-copyright" itemprop="copyrightHolder">Companyright Companyname 2023</p>
                     <section class="SOME">
-                        <a href="https://facebook.com" title="Our facebook"><i  class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                        <a href="https://instagram.com" title="Our instagram"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                        <a href="https://no.linkedin.com/" title="Our linkedin"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                        <a href="https://facebook.com" title="Our facebook" role="link"><i  class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                        <a href="https://instagram.com" title="Our instagram" role="link"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                        <a href="https://no.linkedin.com/" title="Our linkedin" role="link"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
                     </section>
                 </section>
             </footer>

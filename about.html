@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="nb" itemscope itemtype="http://schema.org/WebPage">
     <head>
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+
+        <title>CreativeForge</title>
+        <meta name="description" content="Beskrivelse av nettsiden">
+        <meta name="keywords" content="Services, Branding, Design, Development, Creativity, Productivity, Quality">
+
+        <meta property="og:title" content="Tittel for Facebook">
+        <meta property="og:description" content="Beskrivelse for Facebook">
+        <meta property="og:image" content="URL-til-bilde-for-facebook.jpg">
+        <meta property="og:url" content="URL-til-nettsiden">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,44 +21,45 @@
     <body>
         <div id="grid-container">
             <header id="page-header">
-                <h2><a href="index.html" class="logo"><img src="ressurser\logo1.png" alt="Nettsidens logo"/></a></h2>
-                    <nav>
+                <h2><a href="index.html" class="logo"><img src="ressurser\logo1.png" alt="Website logo - also navigates to home page" itemprop="logo" aria-label="Go to the home page"/></a></h2>
+                    <nav role="navigation" itemprop="navigation">
                         <ul class="nav-items">
-                            <li><a href="index.html" title="navigate to home page">Home</a></li>
-                            <li><a href="products.html" title="navigate to portfolio">Portfolio</a></li>
-                            <li class="current-menu-item" title="navigate to about-us page"><a href="about.html">About</a></li>
-                            <li class="contact"><a href="#contact-title" title="navigate to contact information">Contact</a></li>
+                            <li><a href="index.html" role="menuitem" aria-label="Go to the home page">Home</a></li>
+                            <li><a href="products.html" role="menuitem" aria-label="Go to the portfolio page">Portfolio</a></li>
+                            <li class="current-menu-item"><a href="about.html" role="menuitem" aria-label="Go to the about us page">About</a></li>
+                            <li class="contact"><a href="#contact-title" role="menuitem" aria-label="Go to our contact section">Contact</a></li>
                         </ul>
                     </nav>
-                    <a href="" class="bg-img-about-us"><img alt="Background image"/></a></h2>
+                    <!-- Kort beskrivelse av bilde, får frem at det ikke er nødvendig for bruken av nettsiden -->
+                    <a class="bg-img-about-us"><img alt="Scenic view of the mountains" itemprop="image"/></a></h2>
                     <div class="overlay-about-us">
                         <section class="about-our-company">
-                            <p>Company name</p>
-                            <h3>About Our Company</h3>
-                            <p>Reasoned noise Frodo Baggins mug halfling's barley gaze entered! Andros report sapphire tired? Parent face eats win Fellowship. Hear my voice. Come back to the light. Dogs eaves Mungo's rogue forked fabled blue. Gandalf's death was not in vain. Nor would he have you give up hope. Joy moaning cannot wit resolved became crop Ring-bearer. Downhill relevant Pelennor sautéed fabled fire noise lament mountain interesting.</p>
-                            <a class="contact-about-us" href="#contact-title" title="Navigate to contact information">Get in touch with us</a>
+                                <p>Company name</p>
+                                <h3>About Our Company</h3>
+                                <p>Reasoned noise Frodo Baggins mug halfling's barley gaze entered! Andros report sapphire tired? Parent face eats win Fellowship. Hear my voice. Come back to the light. Dogs eaves Mungo's rogue forked fabled blue. Gandalf's death was not in vain. Nor would he have you give up hope. Joy moaning cannot wit resolved became crop Ring-bearer. Downhill relevant Pelennor sautéed fabled fire noise lament mountain interesting.</p>
+                                <a class="contact-about-us" href="#contact-title" title="Navigate to contact information" aria-label="Navigate to contact information">Get in touch with us</a>
                         </section>
                     </div>
             </header>
             <aside class="aside">
                 <h3 class="services-title">Our Services</h3>
-                <section class="services">
-                    <article>
+                <section class="services"  itemprop="mainContentOfPage">
+                    <article role="article" itemscope itemtype="http://schema.org/Article">
                         <i class="fa-solid fa-user-group"></i>
                         <h4>Branding</h4>
                         <p>You are full of surprises, Master Baggins. Painted sacred eats camp charm Shirkers</p>
                     </article>
-                    <article>   
+                    <article role="article" itemscope itemtype="http://schema.org/Article">   
                         <i class="fa-solid fa-cloud-arrow-up"></i>
                         <h4>Branding</h4>
                         <p>You are full of surprises, Master Baggins. Painted sacred eats camp charm Shirkers</p>
                     </article>
-                    <article>   
+                    <article role="article" itemscope itemtype="http://schema.org/Article">   
                         <i class="fa-solid fa-code"></i>
                         <h4>Branding</h4>
                         <p>You are full of surprises, Master Baggins. Painted sacred eats camp charm Shirkers</p>
                     </article>
-                    <article>   
+                    <article role="article" itemscope itemtype="http://schema.org/Article">   
                         <i class="fa-solid fa-wifi"></i>
                         <h4>Branding</h4>
                         <p>You are full of surprises, Master Baggins. Painted sacred eats camp charm Shirkers</p>
@@ -60,9 +70,9 @@
                 <div class="bg-colour">
                 <h4 class="client-title">Some of our clients</h4>
                 <section class="client-section">
-                    <h2><a class="client-logo"><img src="ressurser\logo1.png" alt="Nettsidens logo" /></a></h2>
-                    <h2><a class="client-logo"><img src="ressurser\logo2.png" alt="Nettsidens logo" /></a></h2>
-                    <h2><a class="client-logo"><img src="ressurser\logo3.png" alt="Nettsidens logo" /></a></h2>
+                    <h2><a class="client-logo"><img src="ressurser\logo1.png" alt="Nettsidens logo" itemprop="image"/></a></h2>
+                    <h2><a class="client-logo"><img src="ressurser\logo2.png" alt="Nettsidens logo" itemprop="image"/></a></h2>
+                    <h2><a class="client-logo"><img src="ressurser\logo3.png" alt="Nettsidens logo" itemprop="image"/></a></h2>
                 </section>
                 </div>
                 <div class="bg-colour-grey">
@@ -70,19 +80,19 @@
                     <section class="flex-test">
                         <section class="message-us-section">
                             <h3>Send us a message</h3>
-                            <p>Name</p>
                             <form class="signupForm-message">
-                                <input type="text" id="name" name="name" required placeholder="Ola nordmann">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Ola nordmann" aria-label="Send us a message: Your name">
                             </form>
-                            <p>Subject</p>
                             <form class="signupForm-message">
-                                <input type="text" id="Subject" name="Subject" required placeholder="Branding">
+                                <label for="Subject" class="form-label">Subject</label>
+                                <input type="text" id="Subject" name="Subject" required placeholder="Branding" aria-label="Send us a message: The subject">
                             </form>
-                            <p>Message</p>
                             <form class="signupForm-message-big">
-                                <input type="text" id="message" name="message" required>
+                                <label for="message" class="form-label">Message</label>
+                                <input type="text" id="message" name="message" required aria-label="Send us a message: The message">
                             </form>
-                            <p class="contact"><a>Send message</a></p>
+                            <p class="contact" tabindex="0" aria-label="Send the message"><a>Send message</a></p>
                         </section>
                         <section class="contact-section">
                             <h3>Contact information</h3>
@@ -91,22 +101,24 @@
                             <p title="Our address"><i class="fa-solid fa-location-pin"></i>B R A Veien 4, 1757 Halden</p>
                             <p title="Contact phone number"><i class="fa-solid fa-phone"></i>69 60 80 00</p>
                             <p class="contact-link" title="Contact email"><i class="fa-solid fa-envelope"></i>postmotakk@hiof.no</p>
-                            </section>
+                        </section>
                         </section>
                     </section>    
                 </div>
+                <!-- Legger til title og alt text med lenke til addressen i google maps for bedre tilgjengelighet -->
+                <iframe title="Our location on Google Maps" alt="https://www.google.com/maps/place/H%C3%B8gskolen+i+%C3%98stfold/@59.1292502,11.3502284,17z/data=!3m1!4b1!4m6!3m5!1s0x464412f0d344246f:0x4e47f19c99b253b1!8m2!3d59.1292475!4d11.3528033!16zL20vMDNkaGI5?entry=ttu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765434289!2d11.350228377335808!3d59.12925022701983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700953814583!5m2!1sno!2sno" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <!-- Lenker til selve dokumentet istedet for # så tastatur navigasjon starter øverst på siden i stedet for fortsette å navigere nederst på siden-->
-                <a href="about.html" class="back-to-top"><i class="fa-solid fa-arrow-up" style="color: #ffffff;" title="Navigate back-to-top"></i></a>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765434289!2d11.350228377335808!3d59.12925022701983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700953814583!5m2!1sno!2sno" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="about.html" class="back-to-top" role="link" aria-label="Back to the top of the page"><i class="fa-solid fa-arrow-up" style="color: #ffffff;" title="Navigate back-to-top"></i></a>
             </main>
-            <footer>
+            <footer itemscope itemtype="http://schema.org/WPFooter">
                 <section class="footer">
-                    <h2><a href="index.html" class="logo2" title="Website logo - also navigates to home page"><img src="ressurser\logo1.png" alt="Websites logo" /></a></h2>
-                    <p class="footer-copyright">Companyright Companyname 2023</p>
+                    <!-- Legger til Aria label da dette er det som leses først av en skjermleser (jeg testet med NVDA) -->
+                    <h2><a href="index.html" class="logo2" title="Website logo - also navigates to home page" role="link" aria-label="Back to the home page"><img src="ressurser\logo1.png" alt="Websites logo" itemprop="logo"/></a></h2>
+                    <p class="footer-copyright" itemprop="copyrightHolder">Companyright Companyname 2023</p>
                     <section class="SOME">
-                        <a href="https://facebook.com" title="Our facebook"><i  class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                        <a href="https://instagram.com" title="Our instagram"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                        <a href="https://no.linkedin.com/" title="Our linkedin"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                        <a href="https://facebook.com" title="Our facebook" role="link"><i  class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                        <a href="https://instagram.com" title="Our instagram" role="link"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                        <a href="https://no.linkedin.com/" title="Our linkedin" role="link"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
                     </section>
                 </section>
             </footer>

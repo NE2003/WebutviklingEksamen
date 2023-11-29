@@ -555,6 +555,12 @@ footer{
     text-decoration: none;
 }
 
+.form-label{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: block;
+}
+
 
 
   @media (min-width: 1200px) {
@@ -864,7 +870,7 @@ footer{
     .signupForm-message-big input{
         width: 40rem;
     }
-
+    
     .contact-section p{
         margin-right: 20%;
     }
