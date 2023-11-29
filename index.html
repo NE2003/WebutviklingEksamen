@@ -2,17 +2,16 @@
 <html lang="nb" itemscope itemtype="http://schema.org/WebPage">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>CreativeForge</title>
-        <meta name="description" content="The homepage for CreativeForge. On this page you can find information about our compant, and what kinda services we can provide our customers">
+        <meta name="description" content="The homepage for CreativeForge. On this page you can find information about our company, and what kinda services we can provide our customers">
         <meta name="keywords" content="Services, Branding, Design, Development, Creativity, Productivity, Quality">
 
-        <meta property="og:title" content="Tittel for Facebook">
-        <meta property="og:description" content="Beskrivelse for Facebook">
-        <meta property="og:image" content="URL-til-bilde-for-facebook.jpg">
-        <meta property="og:url" content="URL-til-nettsiden">
+        <meta property="og:title" content="CreativeForge - Homepage">
+        <meta property="og:description" content="On this page you can find information about our company, and what kinda services we can provide our customers">
+        <meta property="og:image" content="ressurser\bg1.jpg">
+        <meta property="og:url" content="https://itstud.hiof.no/~nikolase/WebutviklingEksamen/index.html">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -23,32 +22,32 @@
             <header id="page-header">
                 <!-- Unngår å bruke aria label i denne logoen da det er forstyrrende og unødvendig -->
                 <h2><a href="index.html" class="logo"><img src="ressurser\logo1.png" alt="Website logo - also refreshes the home page" itemprop="logo" aria-label="Go to the home page"/></a></h2>
-                    <nav role="navigation" itemprop="navigation">
-                        <ul class="nav-items">
-                            <li class="current-menu-item"><a href="index.html" role="menuitem" aria-label="Go to the home page">Home</a></li>
-                            <li><a href="products.html" role="menuitem" aria-label="Go to the portfolio page">Portfolio</a></li>
-                            <li><a href="about.html" role="menuitem" aria-label="Go to the about us page">About</a></li>
-                            <li class="contact"><a href="about.html#contact-title" role="menuitem" aria-label="Go to our contact section">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <!-- Kort beskrivelse av bilde, får frem at det ikke er nødvendig for bruken av nettsiden -->
-                    <a class="bg-img" role="img"><img alt="Scenic view of the mountains" itemprop="image"/></a></h2>
-                    <section class="background-video">
-                        <!-- forbedrer navigasjon ved å fjerne videon fra tastatur-navigasjon -->
-                        <video autoplay loop muted tabindex="-1">
-                          <source src="ressurser\mountains.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
+                <nav role="navigation" itemprop="navigation">
+                    <ul class="nav-items">
+                        <li class="current-menu-item"><a href="index.html" role="menuitem" aria-label="Go to the home page">Home</a></li>
+                        <li><a href="products.html" role="menuitem" aria-label="Go to the portfolio page">Portfolio</a></li>
+                        <li><a href="about.html" role="menuitem" aria-label="Go to the about us page">About</a></li>
+                        <li class="contact"><a href="about.html#contact-title" role="menuitem" aria-label="Go to our contact section">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Kort beskrivelse av bilde, får frem at det ikke er nødvendig for bruken av nettsiden -->
+                <a class="bg-img" role="img"><img alt="Scenic view of the mountains" itemprop="image"/></a></h2>
+                <section class="background-video">
+                    <!-- forbedrer navigasjon ved å fjerne videon fra tastatur-navigasjon -->
+                    <video autoplay loop muted tabindex="-1">
+                        <source src="ressurser\mountains.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+                <div class="overlay">
+                    <section class="image-text">
+                        <article role="article" itemscope itemtype="http://schema.org/Article">
+                            <h1 class="title">Compelling headline</h1>
+                            <p class="parahraph">Dogs eaves Mungo's rogue forked fabled blue. Gandalf's death was not in vain. Nor would he have you give up hope. Joy moaning cannot wit resolved became crop Ring-bearer. All right, then. Keep your secrets. Percy farther fixed don't! Downhill relevant Pelennor sautéed fabled fire noise lament mountain interesting. All right, then. Keep your secrets. Percy farther fixed don't!</p>
+                            <p class="contact2"><a class="test" href="#our-services" title="Navigate to the services we offer" role="link" aria-label="Go to our services section">Read more about our services</a></p>
+                        </article>
                     </section>
-                    <div class="overlay">
-                        <section class="image-text">
-                            <article role="article" itemscope itemtype="http://schema.org/Article">
-                                <h1 class="title">Compelling headline</h1>
-                                <p class="parahraph">Dogs eaves Mungo's rogue forked fabled blue. Gandalf's death was not in vain. Nor would he have you give up hope. Joy moaning cannot wit resolved became crop Ring-bearer. All right, then. Keep your secrets. Percy farther fixed don't! Downhill relevant Pelennor sautéed fabled fire noise lament mountain interesting. All right, then. Keep your secrets. Percy farther fixed don't!</p>
-                                <p class="contact2"><a class="test" href="#our-services" title="Navigate to the services we offer" role="link" aria-label="Go to our services section">Read more about our services</a></p>
-                            </article>
-                        </section>
-                    </div>
+                </div>
             </header>
             <aside class="aside">
                 <article class="intro-section" role="article" itemscope itemtype="http://schema.org/Article">
@@ -56,13 +55,13 @@
                     <p>You are full of surprises, Master Baggins. Painted sacred eats camp charm Shirkers system. Greed club run caves sprite youngest toad Lower inquiries. Shreds quest business Sebastian cracked ignored wizard?</p>
                 </article>
                 <section class="about-us">
-                        <h2><a class="about-us-image"><img src="ressurser\placeholder 400400.png" alt="Et beskrivende bilde av vår bedrift" /></a></h2>
-                        <article role="article" itemscope itemtype="http://schema.org/Article">
-                            <h3>About our company</h3>
-                            <p class="about-us-para">Oath torn desolation Maggot's walked tobacco plumbing five judged. Let the Ring-bearer decide. Modeling well-wishers within attacked batses flatten Bolg loveliest prisoner. Reasoned noise Frodo Baggins mug halfling's barley gaze entered! Andros report sapphire tired? Parent face eats win Fellowship. Hear my voice. Come back to the light. Dogs eaves Mungo's rogue forked fabled blue. Gandalf's death was not in vain. Nor would he have you give up hope. Joy moaning cannot wit resolved became crop Ring-bearer. Downhill relevant Pelennor sautéed fabled fire noise lament mountain interesting. All right, then. Keep your secrets. Percy farther fixed don't!</p>
-                            <a href="about.html" class="read-more" title="Navigate to the about-us page" role="link" aria-label="Go to the about us page">
-                                <h4>Read more about us</h4>
-                            </a>  
+                    <h2><a class="about-us-image"><img src="ressurser\placeholder 400400.png" alt="Et beskrivende bilde av vår bedrift" /></a></h2>
+                    <article role="article" itemscope itemtype="http://schema.org/Article">
+                        <h3>About our company</h3>
+                        <p class="about-us-para">Oath torn desolation Maggot's walked tobacco plumbing five judged. Let the Ring-bearer decide. Modeling well-wishers within attacked batses flatten Bolg loveliest prisoner. Reasoned noise Frodo Baggins mug halfling's barley gaze entered! Andros report sapphire tired? Parent face eats win Fellowship. Hear my voice. Come back to the light. Dogs eaves Mungo's rogue forked fabled blue. Gandalf's death was not in vain. Nor would he have you give up hope. Joy moaning cannot wit resolved became crop Ring-bearer. Downhill relevant Pelennor sautéed fabled fire noise lament mountain interesting. All right, then. Keep your secrets. Percy farther fixed don't!</p>
+                        <a href="about.html" class="read-more" title="Navigate to the about-us page" role="link" aria-label="Go to the about us page">
+                            <h4>Read more about us</h4>
+                        </a>  
                     </article>                        
                 </section>
             </aside>
