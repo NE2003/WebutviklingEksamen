@@ -20,7 +20,7 @@
     <body>
         <div id="grid-container">
             <header id="page-header">
-                <h2><a href="index.html" class="logo"><img src="ressurser\logo1.png" alt="Website logo - also navigates to home page" itemprop="logo" aria-label="Go to the home page"/></a></h2>
+                <h2><a href="index.html" class="logo"><img src="ressurser/logo1.png" alt="Website logo - also navigates to home page" itemprop="logo" aria-label="Go to the home page"/></a></h2>
                 <nav role="navigation" itemprop="navigation">
                     <ul class="nav-items" role="menubar">
                         <li><a href="index.html" role="menuitem" aria-label="Go to the home page">Home</a></li>
@@ -29,8 +29,7 @@
                         <li class="contact"><a href="#contact-title" role="menuitem" aria-label="Go to our contact section">Contact</a></li>
                     </ul>
                 </nav>
-                    <!-- Kort beskrivelse av bilde, får frem at det ikke er nødvendig for bruken av nettsiden -->
-                <a class="bg-img-about-us"><img alt="Scenic view of the mountains" itemprop="image"/></a></h2>
+                <a class="bg-img-about-us"></a>
                 <div class="overlay-about-us">
                     <section class="about-our-company">
                         <p>Company name</p>
@@ -69,9 +68,9 @@
                 <div class="bg-colour">
                 <h4 class="client-title">Some of our clients</h4>
                 <section class="client-section">
-                    <h2><a class="client-logo"><img src="ressurser\logo1.png" alt="Nettsidens logo" itemprop="image"/></a></h2>
-                    <h2><a class="client-logo"><img src="ressurser\logo2.png" alt="Nettsidens logo" itemprop="image"/></a></h2>
-                    <h2><a class="client-logo"><img src="ressurser\logo3.png" alt="Nettsidens logo" itemprop="image"/></a></h2>
+                    <h2><a class="client-logo"><img src="ressurser/logo1.png" alt="Nettsidens logo" itemprop="image"/></a></h2>
+                    <h2><a class="client-logo"><img src="ressurser/logo2.png" alt="Nettsidens logo" itemprop="image"/></a></h2>
+                    <h2><a class="client-logo"><img src="ressurser/logo3.png" alt="Nettsidens logo" itemprop="image"/></a></h2>
                 </section>
                 </div>
                 <div class="bg-colour-grey">
@@ -104,15 +103,14 @@
                         </article>
                     </section>    
                 </div>
-                <!-- Legger til title og alt text med lenke til addressen i google maps for bedre tilgjengelighet -->
-                <iframe title="Our location on Google Maps" alt="https://www.google.com/maps/place/H%C3%B8gskolen+i+%C3%98stfold/@59.1292502,11.3502284,17z/data=!3m1!4b1!4m6!3m5!1s0x464412f0d344246f:0x4e47f19c99b253b1!8m2!3d59.1292475!4d11.3528033!16zL20vMDNkaGI5?entry=ttu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765434289!2d11.350228377335808!3d59.12925022701983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700953814583!5m2!1sno!2sno" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title="Our location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765434289!2d11.350228377335808!3d59.12925022701983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700953814583!5m2!1sno!2sno" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <!-- Lenker til selve dokumentet istedet for # så tastatur navigasjon starter øverst på siden i stedet for fortsette å navigere nederst på siden-->
                 <a href="about.html" class="back-to-top" role="link" aria-label="Back to the top of the page"><i class="fa-solid fa-arrow-up" style="color: #ffffff;" title="Navigate back-to-top"></i></a>
             </main>
             <footer itemscope itemtype="http://schema.org/WPFooter">
                 <section class="footer">
                     <!-- Legger til Aria label da dette er det som leses først av en skjermleser (jeg testet med NVDA) -->
-                    <h2><a href="index.html" class="logo2" title="Website logo - also navigates to home page" role="link" aria-label="Back to the home page"><img src="ressurser\logo1.png" alt="Websites logo" itemprop="logo"/></a></h2>
+                    <h2><a href="index.html" class="logo2" title="Website logo - also navigates to home page" role="link" aria-label="Back to the home page"><img src="ressurser/logo1.png" alt="Websites logo" itemprop="logo"/></a></h2>
                     <p class="footer-copyright" itemprop="copyrightHolder">Companyright Companyname 2023</p>
                     <section class="SOME">
                         <a href="https://facebook.com" title="Our facebook" role="link"><i  class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>

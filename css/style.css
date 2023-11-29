@@ -561,6 +561,10 @@ footer{
     display: block;
 }
 
+iframe{
+    width: 100%;
+}
+
 
 
   @media (min-width: 1200px) {
@@ -870,7 +874,7 @@ footer{
     .signupForm-message-big input{
         width: 40rem;
     }
-    
+
     .contact-section p{
         margin-right: 20%;
     }
