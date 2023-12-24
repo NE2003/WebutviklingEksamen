@@ -568,6 +568,24 @@ iframe{
     width: 100%;
 }
 
+/*Playing with JS*/
+
+#notification {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e6bd43;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
 
   @media (min-width: 1200px) {
 
