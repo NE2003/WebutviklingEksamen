@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
     <head>
+        <script src="../js/about.js" defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,7 +16,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- ChatGpt hjalp med å oversette svg koden fra fontawesome til noe som kunne brukes i href -->
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20height='16'%20width='18'%20viewBox='0%200%20576%20512'%3E%3Cpath%20d='M287.9%200c9.2%200%2017.6%205.2%2021.6%2013.5l68.6%20141.3%20153.2%2022.6c9%201.3%2016.5%207.6%2019.3%2016.3s.5%2018.1-5.9%2024.5L433.6%20328.4l26.2%20155.6c1.5%209-2.2%2018.1-9.7%2023.5s-17.3%206-25.3%201.7l-137-73.2L151%20509.1c-8.1%204.3-17.9%203.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1%20218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9%2019.3-16.3l153.2-22.6L266.3%2013.5C270.4%205.2%20278.7%200%20287.9%200zm0%2079L235.4%20187.2c-3.5%207.1-10.2%2012.1-18.1%2013.3L99%20217.9%20184.9%20303c5.5%205.5%208.1%2013.3%206.8%2021L171.4%20443.7l105.2-56.2c7.1-3.8%2015.6-3.8%2022.6%200l105.2%2056.2L384.2%20324.1c-1.3-7.7%201.2-15.5%206.8-21l85.9-85.1L358.6%20200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9%2079z'/%3E%3C/svg%3E">
     </head>
@@ -88,11 +89,8 @@
                                 <input type="text" id="Subject" name="Subject" required placeholder="Branding" aria-label="Send us a message: The subject">
 
                                 <label for="message" class="form-label">Message</label>
-                                <input type="text" id="message" name="message" required aria-label="Send us a message: The message">
-
-                                <p class="contact" tabindex="0" aria-label="Send the message">
-                                    <button type="submit">Send message</button>
-                                  </p>
+                                <input type="text" id="message" name="message" required placeholder="Your message" aria-label="Send us a message: The message">
+                                    <button type="submit" class="custom-submit-button">Send message</button>
                             </form>
                             <div id="notification" class="hidden"></div>
                         </article>

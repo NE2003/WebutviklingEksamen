@@ -1,37 +1,54 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.signupForm-message');
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
 
-async function sendMessage() {
-  try {
-      // Get input values
-      var name = document.getElementById("name").value;
-      var subject = document.getElementById("Subject").value;
-      var message = document.getElementById("message").value;
+      // Submit the form data using fetch
+      try {
+        const response = await fetch('/sendMessage', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: form.querySelector('#name').value,
+            Subject: form.querySelector('#Subject').value,
+            message: form.querySelector('#message').value,
+          }),
+        });
 
-      // Clear the input fields
-      document.getElementById("name").value = "";
-      document.getElementById("Subject").value = "";
-      document.getElementById("message").value = "";
+        const result = await response.json();
 
-      // Show a custom notification
-      var notification = document.getElementById("notification");
-      notification.innerText = "Message sent!";
-      notification.classList.remove("hidden");
+        if (result.success) {
+          // Show success notification
+          showNotification('Message sent!', 'success');
+
+        } else {
+          // Show error notification
+          showNotification('Message failed!', 'error');
+        }
+      } catch (error) {
+        console.error(error);
+        // Show error notification
+        showNotification('Message failed!', 'error');
+      }
+    });
+
+    function showNotification(message, type) {
+      const notification = document.getElementById('notification');
+      notification.innerText = message;
+      notification.classList.remove('hidden');
+      notification.classList.add(type);
+
+      // Reset form fields
+      form.querySelector('#name').value = '';
+      form.querySelector('#Subject').value = '';
+      form.querySelector('#message').value = '';
 
       // Hide the notification after 3 seconds (3000 milliseconds)
       setTimeout(function () {
-          notification.classList.add("hidden");
+        notification.classList.add('hidden');
+        notification.classList.remove(type);
       }, 3000);
-
-      // Add data to Firestore
-      const messagesCollection = collection(firestore, 'messages');
-
-      await addDoc(messagesCollection, {
-          name: name,
-          subject: subject,
-          message: message
-      });
-
-      console.log("Message sent successfully!");
-  } catch (error) {
-      console.error("Error sending message:", error);
-  }
-}
+    }
+  });

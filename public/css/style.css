@@ -586,6 +586,19 @@ iframe{
     display: none;
   }
 
+  .custom-submit-button {
+    background-color: #e6bd43;
+    color: black;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  
+  .custom-submit-button:hover {
+    background-color: black;
+    color: #e6bd43;
+  }
 
   @media (min-width: 1200px) {
 

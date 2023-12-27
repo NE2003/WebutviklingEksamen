@@ -5,9 +5,10 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 
-const PORT = 22; // Choose any port you prefer
+const PORT = 2000; // Choose any port you prefer
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/js', express.static(path.join(__dirname, 'js')));
 
 
 // MongoDB connection
@@ -37,7 +38,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve your HTML form
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/about.html'); // Replace with the path to your HTML file
+  res.sendFile(__dirname, 'public', 'about.html'); // Replace with the path to your HTML file
 });
 
 // Handle form submission
@@ -52,18 +53,20 @@ app.post('/sendMessage', async (req, res) => {
     const newMessage = new Message({ name, Subject, message });
     await newMessage.save();
 
+
     // Send a response to the client
-    res.send('Message saved successfully!');
+    res.json({ success: true});
   } catch (error) {
     console.error(error);
-    res.status(500).send('Internal Server Error');
+    // Send an error response to the client
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
   }
 });
 
-//app.listen(PORT, () => {
-  //console.log(`Server is running on http://localhost:${PORT}`);
-//})
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+})
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server is running on http://0.0.0.0:${PORT}`);
-});
+//app.listen(PORT, '0.0.0.0', () => {
+  //console.log(`Server is running on http://0.0.0.0:${PORT}`);
+//});
